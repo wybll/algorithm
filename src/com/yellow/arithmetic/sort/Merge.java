@@ -1,4 +1,4 @@
-package arithmetic.sort;
+package src.com.yellow.arithmetic.sort;
 
 /**
  *
@@ -14,7 +14,7 @@ package arithmetic.sort;
                 ③对左右两边已经排好序的数组进行 merge合并 操作
 */
 
-public class MergeSort {
+public class Merge {
     public static void main(String[] args) {
         int[] arr = {2,3,5,1,2,78,23,45,56,99,0,100};
         mergeSort(arr);

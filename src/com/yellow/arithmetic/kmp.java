@@ -1,4 +1,4 @@
-package arithmetic;
+package src.com.yellow.arithmetic;
 
 public class kmp {
     public static void main(String[] args) {

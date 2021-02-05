@@ -1,4 +1,4 @@
-package arithmetic.sort;
+package src.com.yellow.arithmetic.sort;
 
 import java.util.Arrays;
 
@@ -9,7 +9,7 @@ import java.util.Arrays;
  *@Date 2021/2/3 13:39
  *
  */
-public class MergeSort1 {
+public class Merge1 {
     public static void main(String[] args) {
         int[] arr = {2,3,5,1,2,78,23,45,56,99,0,100};
         Arrays.sort(arr);
