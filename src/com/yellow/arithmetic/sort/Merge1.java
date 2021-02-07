@@ -1,6 +1,6 @@
-package src.com.yellow.arithmetic.sort;
+package com.yellow.arithmetic.sort;
 
-import java.util.Arrays;
+import static com.yellow.arithmetic.util.CommonUtil.printArr;
 
 /**
  *
@@ -12,11 +12,8 @@ import java.util.Arrays;
 public class Merge1 {
     public static void main(String[] args) {
         int[] arr = {2,3,5,1,2,78,23,45,56,99,0,100};
-        Arrays.sort(arr);
         mergeSort(arr);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i]+"\t");
-        }
+        printArr(arr);
     }
 
     public static void mergeSort(int[] arr){

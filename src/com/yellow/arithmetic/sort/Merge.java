@@ -1,4 +1,4 @@
-package src.com.yellow.arithmetic.sort;
+package com.yellow.arithmetic.sort;
 
 /**
  *

@@ -1,9 +1,16 @@
-package src.com.yellow.arithmetic;
+package com.yellow.arithmetic;
 
+/**
+ *
+ *@Description kmp算法（字符串匹配算法）
+ *@Author backen
+ *@Date 2021/2/4 09:32
+ *
+ */
 public class kmp {
     public static void main(String[] args) {
             String s1 = "abhfkabhjdjfkdsk";
-            String s2 = "abh";
+            String s2 = "fk";
         int i = kmpArithmtic(s1, s2);
         System.out.println(i);
     }

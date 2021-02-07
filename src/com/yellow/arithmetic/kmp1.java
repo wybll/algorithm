@@ -1,21 +1,18 @@
-package src.com.yellow.arithmetic;/**
- * @Description TODO
- * @Author 11366
- * @Date 2021/2/4 9:32
- */
+package com.yellow.arithmetic;
 
 /**
  *
  *@Description kmp算法（字符串匹配算法）
  *@Author backen
- *@Date 2021/2/4 9:32
+ *@Date 2021/2/4 17:35
  *
  */
 public class kmp1 {
     public static void main(String[] args) {
         String s1 ="178000999941178";
-        String s2 ="9999";
+        String s2 ="000";
         int kmp_index = kmp(s1, s2);
+        System.out.println(kmp_index);
     }
 
     private static  int[] getNextArray(char[] str2){
