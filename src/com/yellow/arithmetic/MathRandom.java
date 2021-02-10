@@ -21,8 +21,7 @@ public class MathRandom {
 
         System.out.println("=================");
 // 随机数 * n -->  [0,n)等概率返回
-        /*double random = Math.random();
-
+        /*
         int testTimes = 10000000;
         int count = 0;
         for (int i = 0; i < testTimes; i++) {
@@ -33,14 +32,34 @@ public class MathRandom {
 //（int）(随机数 * n)  -->  [0,n-1]随机整数
         System.out.println("=================");
 
-        double random = Math.random();
-
-        int testTimes = 10000000;
+        /*int testTimes = 10000000;
         int count = 0;
         for (int i = 0; i < testTimes; i++) {
             if((int)(Math.random()*8 )< 0){
                 count++;
             }
+        }System.out.println((double) count/(double)testTimes);*/
+
+// 关于x^2的随机概率
+        /*int testTimes = 10000000;
+        int count = 0;
+        for (int i = 0; i < testTimes; i++) {
+            double min = Math.max(Math.random(),Math.random());
+            if(min < 1){
+                count++;
+            }
+        }System.out.println((double) count/(double)testTimes);*/
+
+// 关于x^3的随机概率
+        int testTimes = 10000000;
+        int count = 0;
+        for (int i = 0; i < testTimes; i++) {
+            double max1 = Math.max(Math.random(),Math.random());
+            double max2 = Math.max(Math.random(),max1);
+            if(max2 < 0.6){
+                count++;
+            }
         }System.out.println((double) count/(double)testTimes);
     }
+
 }
