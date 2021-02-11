@@ -19,7 +19,7 @@ public class RandomInterview {
     }
 
 
-    /*  只能调用getRandom1To5()方法，且不能修改，写出等概率返回1~7整数的随机函数 */
+    /*  题目一：只能调用getRandom1To5()方法，且不能修改，写出等概率返回1~7整数的随机函数 */
     public static int getRandom1To7(){
         int ans;
         do {
@@ -43,4 +43,16 @@ public class RandomInterview {
         return ans;
     }
 
+    //  题目二：你只知道 x函数 会以一定的概率返回 0和1，但概率是多少你不知道，写出y函数,等概率返回0和1
+    public static int x(){
+        return Math.random() < 0.8 ? 1 : 0;
+    }
+
+    public static int y(){
+        int ans ;
+        do {
+            ans = x();
+        }while (ans == x());
+        return ans;
+    }
 }
