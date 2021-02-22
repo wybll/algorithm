@@ -28,4 +28,26 @@ public class Node<T> {
          }
          return  pre;
     }
+
+    //删除 node.value == num 的节点
+    public static Node removeValue(Node<Integer> head, int num){
+        while (head !=null){
+            if (head.value != num)break;
+            head = head.next;
+        }
+
+        //来到第一个不是num开头的节点
+        Node pre = head;
+        Node cur = head;
+
+        while (cur != null){
+            if ((int)cur.value == num){ //如果 当前节点的值 == num；那么 pre指向 当前节点的 下一个节点
+                pre.next = cur.next;
+            }
+            else {  //如果值不相等，则pre 指向 当前节点
+                pre = cur;
+            }
+            cur = cur.next; //比较完之后，当前节点 后移
+        }return head;
+    }
 }
