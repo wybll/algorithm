@@ -17,6 +17,7 @@ public class Dichotomizing {
      * @return 返回索引位置,不存在返回-1
      */
     public static int dichotomizing(int[] arrs, int number){
+        if(arrs == null || arrs.length == 0) return -1;
         int L = 0;
         int R = arrs.length-1;
         int mid ;
